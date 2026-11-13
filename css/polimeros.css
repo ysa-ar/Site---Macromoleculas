@@ -1,0 +1,36 @@
+.alerta-impacto {
+  margin: 1rem 0;
+  padding: 1.25rem;
+  background-color: rgba(239, 117, 91, 0.12);
+  border-left: 5px solid #e8755b;
+  border-radius: 12px;
+}
+
+.alerta-impacto h3 {
+  margin-top: 0;
+  color: #d65b43;
+}
+
+.alerta-impacto p {
+  margin-bottom: 0;
+}
+
+.botao-expandir {
+  margin: 0.75rem 0;
+  padding: 0.65rem 1.2rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-cartao);
+  border: 2px solid var(--cor-primaria);
+  border-radius: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-expandir:hover {
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+}
+
+.secao-conteudo > .imagem-estrutura {
+  max-height: 280px;
+}

@@ -1,0 +1,36 @@
+.caixa-expansivel {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  background-color: var(--cor-fundo);
+  border-left: 5px solid var(--cor-primaria);
+  border-radius: 12px;
+}
+
+.caixa-expansivel h3 {
+  margin-top: 0;
+  color: var(--cor-primaria);
+}
+
+.caixa-expansivel p {
+  margin-bottom: 0;
+}
+
+.botao-expandir {
+  margin: 0.75rem 0;
+  padding: 0.65rem 1.2rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-cartao);
+  border: 2px solid var(--cor-primaria);
+  border-radius: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-expandir:hover {
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+}
+
+.secao-conteudo > .imagem-estrutura {
+  max-height: 320px;
+}

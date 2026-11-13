@@ -1,0 +1,82 @@
+.grid-comparativo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.cartao-dna,
+.cartao-rna {
+  padding: 1.35rem;
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-borda);
+  border-radius: 16px;
+}
+
+.cartao-dna .imagem-estrutura,
+.cartao-rna .imagem-estrutura {
+  max-height: 210px;
+  margin: 1rem auto;
+}
+
+.cartao-dna h3 {
+  color: #3878d8;
+}
+
+.cartao-rna h3 {
+  color: #a44fc1;
+}
+
+.cartao-dna.destaque {
+  border-color: #3878d8;
+  box-shadow: 0 0 18px rgba(56, 120, 216, 0.3);
+}
+
+.cartao-rna.destaque {
+  border-color: #a44fc1;
+  box-shadow: 0 0 18px rgba(164, 79, 193, 0.3);
+}
+
+.botao-alternar {
+  margin-bottom: 0.5rem;
+  padding: 0.65rem 1.15rem;
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-alternar:hover {
+  background-color: var(--cor-primaria-hover);
+  box-shadow: 0 5px 14px var(--cor-sombra-hover);
+}
+
+.ilustracao-dna {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  max-width: 360px;
+  margin: 2rem auto 0.5rem;
+  padding: 1.25rem;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+}
+
+.ilustracao-dna span {
+  height: 12px;
+  background: linear-gradient(90deg, #5688ed 0 42%, #dce3f2 42% 58%, #b95fc9 58%);
+  border-radius: 12px;
+}
+
+.ilustracao-dna span:nth-child(even) {
+  background: linear-gradient(90deg, #b95fc9 0 42%, #dce3f2 42% 58%, #5688ed 58%);
+}
+
+.legenda-ilustracao {
+  color: var(--cor-texto-suave);
+  text-align: center;
+  font-size: 0.9rem;
+}

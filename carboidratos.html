@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carboidratos — Macromoléculas em Foco</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carboidratos.css">
+</head>
+<body>
+  <header class="cabecalho-principal">
+    <h1>Macromoléculas em Foco</h1>
+    <button class="botao-hamburguer" id="botao-menu">☰</button>
+    <nav>
+      <ul class="menu-navegacao" id="menu-navegacao">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="carboidratos.html">Carboidratos</a></li>
+        <li><a href="lipidios.html">Lipídios</a></li>
+        <li><a href="proteinas.html">Proteínas</a></li>
+        <li><a href="acidos-nucleicos.html">Ácidos Nucleicos</a></li>
+        <li><a href="polimeros.html">Polímeros</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <button id="botao-tema">Modo Escuro</button>
+  </header>
+
+  <main class="conteiner-pagina">
+    <section class="secao-conteudo">
+      <h2>🍞 Carboidratos</h2>
+      <p>São biomoléculas compostas por carbono, hidrogênio e oxigênio, sendo a principal fonte de energia imediata para os seres vivos.</p>
+
+      <h3>Classificação dos Carboidratos</h3>
+      <div class="painel-abas">
+        <button type="button" class="botao-aba ativa" onclick="abrirAba(event, 'mono')">Monossacarídeos</button>
+        <button type="button" class="botao-aba" onclick="abrirAba(event, 'di')">Dissacarídeos</button>
+        <button type="button" class="botao-aba" onclick="abrirAba(event, 'poli')">Polissacarídeos</button>
+      </div>
+
+      <div id="mono" class="conteudo-aba ativa">
+        <h4>Monossacarídeos</h4>
+        <p>Açúcares simples que não podem ser hidrolisados em moléculas menores. Exemplo: Glicose e Frutose.</p>
+      </div>
+      <div id="di" class="conteudo-aba">
+        <h4>Dissacarídeos</h4>
+        <p>Formados pela união de dois monossacarídeos por ligação glicosídica. Exemplo: Sacarose (açúcar de cana) e Lactose.</p>
+      </div>
+      <div id="poli" class="conteudo-aba">
+        <h4>Polissacarídeos</h4>
+        <p>Polímeros formados por centenas a milhares de monossacarídeos. Exemplo: Amido (reserva vegetal) e Celulose (parede celular)  .</p>
+      </div>
+
+      <h3>Propriedades e Importância Biológica</h3>
+      <div class="cartao-info">
+        <p><strong>Solubilidade:</strong> Monossacarídeos e dissacarídeos são altamente solúveis em água devido à presença de várias hidroxilas (-OH). Já os polissacarídeos (como a celulose) possuem baixa solubilidade devido ao seu tamanho gigantesco.</p>
+        <p><strong>Papel Estrutural:</strong> Além de fornecerem energia, formam estruturas rígidas essenciais, como a <em>celulose</em> nos vegetais e a <em>quitina</em> no exoesqueleto dos insetos e crustáceos.</p>
+      </div>
+
+      <h3>Exemplo do Cotidiano</h3>
+      <p>O consumo de massas, pães e frutas fornece energia rápida essencial antes da prática de exercícios físicos.</p>
+
+      <div class="imagem-container">
+        <img src="img/carboidratos.jpeg" alt="Pães, massas, frutas e outros alimentos que contêm carboidratos" class="imagem-conteudo imagem-cotidiano">
+        <p>Pães, massas, milho e frutas são exemplos de alimentos que contêm carboidratos.</p>
+      </div>
+    
+      <div class="image-grid">
+        <div class="image-card">
+            <h4>Fórmula Molecular</h4>
+            <img src="img/glicose-formula-molecular.webp" alt="Fórmula Molecular da Glicose">
+            <p>Representação da composição elementar da glicose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>).</p>
+        </div>
+        <div class="image-card">
+            <h4>Fórmula Linear</h4>
+            <img src="img/glicose-formula-linear.webp" alt="Fórmula Linear da Glicose">
+            <p>Representação aberta da cadeia carbônica da glicose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>).</p>
+        </div>
+        
+        <div class="image-card">
+            <h4>Fórmula Cíclica</h4>
+            <img src="img/glicose-formula-ciclica.webp" alt="Fórmula Cíclica da Glicose">
+            <p>Estrutura em anel predominante da glicose em soluções aquosas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Integrador — Química III e Desenvolvimento Web</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/carboidratos.js"></script>
+</body>
+</html>

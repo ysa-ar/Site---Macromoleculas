@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macromoléculas em Foco</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="animacao-suave">
+  <header class="cabecalho-principal">
+    <h1 class="titulo-site">Macromoléculas em Foco</h1>
+      <button class="botao-hamburguer" id="botao-menu">☰</button>
+      <ul class="menu-navegacao" id="lista-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="carboidratos.html">Carboidratos</a></li>
+        <li><a href="lipidios.html">Lipídios</a></li>
+        <li><a href="proteinas.html">Proteínas</a></li>
+        <li><a href="acidos-nucleicos.html">Ácidos Nucleicos</a></li>
+        <li><a href="polimeros.html">Polímeros</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <button id="botao-tema">Modo Escuro 🌙</button>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="secao-apresentacao">
+      <h2>Bem-vindo ao Guia de Macromoléculas</h2>
+      <p>Estudante: Nome do Aluno | Turma: 3º Ano Informática</p>
+      <p>Explore os tópicos essenciais sobre polímeros e biomoléculas fundamentais à vida.</p>
+    </section>
+
+    <section class="secao-busca">
+      <input type="text" id="campo-busca" placeholder="🔍| Pesquisar macromoléculas ou conceitos...">
+      <div class="conteiner-filtros">
+        <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
+        <button class="botao-filtro" data-categoria="bio">Biologia</button>
+        <button class="botao-filtro" data-categoria="quim">Química</button>
+      </div>
+    </section>
+
+    <section class="grade-cartoes" id="conteiner-cartoes">
+      <article class="cartao-tema" data-categoria="bio">
+        <h3>Carboidratos</h3>
+        <p>Glicídios que fornecem energia imediata para os seres vivos.</p>
+        <a href="carboidratos.html">Saiba mais</a>
+      </article>
+      <article class="cartao-tema" data-categoria="bio">
+        <h3>Lipídios</h3>
+        <p>Moléculas insolúveis em água, fundamentais na reserva de energia.</p>
+        <a href="lipidios.html">Saiba mais</a>
+      </article>
+      <article class="cartao-tema" data-categoria="bio">
+        <h3>Proteínas</h3>
+        <p>Polímeros de aminoácidos com funções estruturais e enzimáticas.</p>
+        <a href="proteinas.html">Saiba mais</a>
+      </article>
+      <article class="cartao-tema" data-categoria="bio">
+        <h3>Ácidos Nucleicos</h3>
+        <p>DNA e RNA, responsáveis pela informação genética.</p>
+        <a href="acidos-nucleicos.html">Saiba mais</a>
+      </article>
+      <article class="cartao-tema" data-categoria="quim">
+        <h3>Polímeros</h3>
+        <p>Macromoléculas formadas por unidades repetitivas (monômeros).</p>
+        <a href="polimeros.html">Saiba mais</a>
+      </article>
+      <p class="sem-resultados" id="sem-resultados" hidden>Nenhum tema encontrado. Tente outra busca.</p>
+    </section>
+
+    <section class="secao-carrossel">
+      <h2>Um olhar de perto 🔬</h2>
+      <div class="caixa-carrossel">
+        <img id="imagem-carrossel" src="img/carboidratos.jpeg" alt="Carboidratos no cotidiano" class="imagem-carrossel">
+        <p id="legenda-carrossel">Carboidratos: Fontes primárias de energia imediata para o organismo.</p>
+      </div>
+      <div class="controles-carrossel">
+        <button id="carrossel-anterior"><< Anterior</button>
+        <button id="carrossel-proximo">Próximo >></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-principal">
+    <p>Projeto Integrador — Química III e Desenvolvimento Web</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

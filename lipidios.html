@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipídios — Macromoléculas em Foco</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lipidios.css">
+</head>
+<body>
+  <header class="cabecalho-principal">
+    <h1>Macromoléculas em Foco</h1>
+    <button class="botao-hamburguer" id="botao-menu">☰</button>
+    <nav>
+      <ul class="menu-navegacao" id="menu-navegacao">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="carboidratos.html">Carboidratos</a></li>
+        <li><a href="lipidios.html">Lipídios</a></li>
+        <li><a href="proteinas.html">Proteínas</a></li>
+        <li><a href="acidos-nucleicos.html">Ácidos Nucleicos</a></li>
+        <li><a href="polimeros.html">Polímeros</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <button id="botao-tema">Modo Escuro 🌙</button>
+  </header>
+
+  <main class="conteiner-pagina">
+    <section class="secao-conteudo">
+      <h2>Lipídios</h2>
+      <p>Compostos orgânicos caracterizados principalmente por sua insolubilidade em água (hidrofobicidade) e alta solubilidade em solventes orgânicos.</p>
+
+      <h3>Exemplos e Funções</h3>
+      <p>Os <strong>Triglicerídeos</strong> atuam como reserva de energia de longo prazo e isolamento térmico. Os <strong>Fosfolipídios</strong> constituem a estrutura básica da membrana plasmática das células.</p>
+
+      <h3>Relação com Alimentação e Saúde</h3>
+      <p>O consumo moderado de lipídios insaturados (encontrados em óleos vegetais e peixes) auxilia no bom funcionamento do sistema cardiovascular.</p>
+
+      <h3>Exemplo do Cotidiano</h3>
+      <p>O azeite de oliva utilizado no preparo de saladas e o tecido adiposo garantindo proteção mecânica e térmica ao corpo.</p>
+
+      <div class="image-grid">
+          <div class="image-card">
+              <h4>Triglicerídeos</h4>
+              <img src="img/lipidios-triglicerideos.webp" alt="Estrutura de Triglicerídeos">
+              <p>Principais reservas energéticas de animais e vegetais formadas por glicerol e ácidos graxos.</p>
+          </div>
+          
+          <div class="image-card">
+              <h4>Fosfolipídios</h4>
+              <img src="img/lipidios-fosfolipidios.webp" alt="Estrutura de Fosfolipídios">
+              <p>Moléculas anfipáticas essenciais que compõem a bicamada das membranas celulares.</p>
+          </div>
+          
+          <div class="image-card">
+              <h4>Esteroides</h4>
+              <img src="img/esteroide-estrutura.jpg" alt="Estrutura de quatro anéis dos esteroides">
+              <p>Lipídios de estrutura cíclica complexa, tendo o colesterol como base para hormônios sexuais.</p>
+          </div>
+          <div class="image-card">
+              <h4>Lipídios no cotidiano</h4>
+              <img class="imagem-cotidiano" src="img/lipidios.jpeg" alt="Alimentos ricos em lipídios, como abacate, castanhas, azeite e peixe">
+              <p>Abacate, castanhas, azeite e peixes são exemplos de alimentos que contêm lipídios.</p>
+          </div>
+      </div>
+
+      <button class="botao-acao" id="abrir-modal">Descobrir Curiosidade Científica</button>
+    </section>
+
+    <div class="janela-modal" id="modal-curiosidade">
+      <div class="caixa-modal">
+        <h3 id="titulo-modal">Você Sabia?</h3>
+        <p>Os lipídios formam uma bicamada fluida que envolve cada célula viva, atuando como um "porteiro seletivo" para garantir o transporte de nutrientes essenciais.</p>
+        <p><small><em>Fonte: Bioquímica Ilustrada (2026)</em></small></p>
+        <button class="fechar-modal" id="fechar-modal">Fechar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Projeto Integrador — Química III e Desenvolvimento Web</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/lipidios.js"></script>
+</body>
+</html>

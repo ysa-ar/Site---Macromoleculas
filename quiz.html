@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — Macromoléculas em Foco</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <header class="cabecalho-principal">
+    <h1>Macromoléculas em Foco</h1>
+    <button class="botao-hamburguer" id="botao-menu">☰</button>
+    <nav>
+      <ul class="menu-navegacao" id="menu-navegacao">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="carboidratos.html">Carboidratos</a></li>
+        <li><a href="lipidios.html">Lipídios</a></li>
+        <li><a href="proteinas.html">Proteínas</a></li>
+        <li><a href="acidos-nucleicos.html">Ácidos Nucleicos</a></li>
+        <li><a href="polimeros.html">Polímeros</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <button id="botao-tema">Modo Escuro 🌙</button>
+  </header>
+
+  <main class="conteiner-pagina">
+    <h2>Quiz Interativo</h2>
+    <p class="instrucao-quiz">Escolha uma resposta para cada pergunta e confira quantas acertou!</p>
+    <form id="formulario-quiz">
+      <div class="cartao-pergunta">
+        <p>1. Qual destas biomoléculas é a principal fonte de energia imediata?</p>
+        <label class="opcao-resposta"><input type="radio" name="p1" value="a"> Carboidratos</label>
+        <label class="opcao-resposta"><input type="radio" name="p1" value="b"> Lipídios</label>
+      </div>
+
+      <div class="cartao-pergunta">
+        <p>2. A ligação peptídica une quais blocos construtores?</p>
+        <label class="opcao-resposta"><input type="radio" name="p2" value="a"> Aminoácidos</label>
+        <label class="opcao-resposta"><input type="radio" name="p2" value="b"> Monossacarídeos</label>
+      </div>
+      <div class="cartao-pergunta">
+        <p>3.Qual é a principal função dos carboidratos no organismo humano?</p>
+        <label class="opcao-resposta"><input type="radio" name="p3" value="a"> Fornecer energia rápida para as células</label>
+        <label class="opcao-resposta"><input type="radio" name="p3" value="b"> Armazenar e transmitir informações genéticas</label>
+      </div>
+       <div class="cartao-pergunta">
+        <p>4.Quais são os monómeros que se unem para formar as proteínas?</p>
+        <label class="opcao-resposta"><input type="radio" name="p4" value="a"> Nucleotídeos</label>
+        <label class="opcao-resposta"><input type="radio" name="p4" value="b"> Aminoácidos</label>
+      </div>
+       <div class="cartao-pergunta">
+        <p>5.Em relação à água, qual é a principal característica dos lipídios?</p>
+        <label class="opcao-resposta"><input type="radio" name="p5" value="a"> São apolares e insolúveis (hidrofóbicos)</label>
+        <label class="opcao-resposta"><input type="radio" name="p5" value="b"> São polares e altamente solúveis (hidrofílicos)</label>
+      </div>
+
+
+      <button type="button" class="botao-enviar" id="btn-enviar-quiz">Conferir Resultado</button>
+    </form>
+
+    <div id="resultado-quiz" class="caixa-resultado"></div>
+  </main>
+
+  <footer>
+    <p>Projeto Integrador — Química III e Desenvolvimento Web[cite: 1, 15]</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
